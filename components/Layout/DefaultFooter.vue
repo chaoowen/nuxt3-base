@@ -1,33 +1,25 @@
 <template>
-  <footer class="bg-gray-darkest text-white text-xs pb-5">
-    <div class="f-container">
-      <p>mememe</p>
-      <!-- <div
-        class="flex-center flex-col gap-15 xl:flex-row xl:justify-between py-15 xl:py-10"
-      >
-        <a href="https://velosaddles.com/" target="_blank">
-          <img
-            class="h-12"
-            src="~/assets/images/logo/logo-white.svg"
-            alt="velo-logo"
-          />
-        </a>
-        <div class="flex-center flex-wrap gap-10">
-          <a
-            v-for="(item, i) in menuItems"
-            :key="i"
-            @click="moveTo(item.to)"
-            class="block hover:text-gray-light font-medium text-sm hoverable"
-          >
-            {{ $t(item.label) }}
-          </a>
-        </div>
-      </div> -->
-      <!-- <div class="text-center xl:text-right">
-        Copyright © {{ currentYear }} VELO. Designed by Fontech
-      </div> -->
+  <footer class="py-10 bg-gray text-white">
+    <div class="container w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm sm:text-center dark:text-gray-400">
+        © 2023 chaowen. All Rights Reserved.
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium sm:mt-0">
+          <li>
+              <a href="#" class="hover:underline me-4 md:me-6">About</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline">Contact</a>
+          </li>
+      </ul>
     </div>
-  </footer>
+</footer>
 </template>
 
 <script setup lang="ts">

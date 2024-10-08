@@ -1,3 +1,6 @@
+import { inset, width, height } from './tailwind/config'
+import { ratio, helpers } from './tailwind/plugin'
+
 export default {
   important: true,
   theme: {
@@ -69,12 +72,13 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [ratio, helpers, inset, width, height, require('flowbite/plugin')],
   content: [
     './components/**/*.{vue,js,ts}',
     './layouts/**/*.vue',
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
     './app.{js,ts,vue}',
+    "./node_modules/flowbite/**/*.{js,ts}"
   ],
 }

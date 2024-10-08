@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col">
+  <div id="top" class="min-h-screen flex flex-col">
     <DefaultHeader />
     <div class="relative page-content mb-auto">
       <slot />

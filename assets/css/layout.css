@@ -1,0 +1,27 @@
+:root {
+  --container-size: 100%;
+  --header-height: 3rem;
+  --container-max-width: 1200px;
+
+  @screen sm {
+    --container-size: theme('screens.sm');
+  }
+
+  @screen md {
+    --container-size: theme('screens.md');
+    --header-height: 4.75rem;
+  }
+
+  @screen lg {
+    --container-size: theme('screens.lg');
+  }
+
+  @screen xl {
+    --container-size: theme('screens.xl');
+    --header-height: 5.5rem;
+  }
+
+  @screen 2xl {
+    --container-size: theme('screens.2xl');
+  }
+}
