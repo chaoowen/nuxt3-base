@@ -10,7 +10,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@vueuse/core": "^11.1.0",
     "flowbite": "^2.5.2",
+    "gsap": "^3.12.5",
     "nuxt": "^3.13.0",
     "pinia": "^2.2.4",
     "vue": "latest",

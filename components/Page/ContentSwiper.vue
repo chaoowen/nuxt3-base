@@ -62,7 +62,7 @@
             {{ String(currentIndex + 1).padStart(2, '0') }}
           </span>
           <span class="px-2 text-gray-lighter">|</span>
-          <span class="text-gray">
+          <span class="text-primary-light">
             {{ String(section.length).padStart(2, '0') }}
           </span>
         </div>
@@ -114,7 +114,7 @@
   .arrow-icon {
     @apply absolute top-1/2 -translate-y-1/2;
     @apply flex-center w-10 h-10 xl:w-12 xl:h-12;
-    @apply bg-gray-darker hover:bg-primary;
+    @apply bg-primary-dark hover:bg-primary;
   }
 
   .transform-group {

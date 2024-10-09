@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed top-0 left-0 w-full bg-secondary z-10 shadow-md">
+  <nav ref="nav" class="fixed top-0 left-0 w-full bg-secondary z-10 shadow-md">
     <div
       class="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto py-1 px-3 md:p-6 transitable"
     >
@@ -25,16 +25,15 @@
           />
         </svg>
       </button>
-      <div class="w-full md:w-auto md:mr-10">
-        <ul
-          class="max-h-0 md:max-h-6 flex flex-col md:flex-row gap-8 md:gap-10 transitable overflow-hidden"
-          :class="{ 'max-h-[20rem] py-8 px-4': navbarExpanded }"
-        >
+      <div
+        class="w-full md:w-auto max-h-0 md:max-h-6 md:mr-10 transitable overflow-hidden"
+        :class="{ 'max-h-[20rem]': navbarExpanded }"
+      >
+        <ul class="flex flex-col md:flex-row gap-8 md:gap-10 py-8 px-4 md:p-0">
           <li v-for="navItem in navItems" :key="navItem.name">
             <a
-              :href="navItem.href"
-              class="block text-primary hover:text-primary-dark transitable"
-              aria-current="page"
+              class="block text-primary hover:text-primary-dark transitable hoverable"
+              @click="moveTo(navItem.to)"
             >
               {{ navItem.name }}
             </a>
@@ -47,8 +46,13 @@
 
 <script setup lang="ts">
   import { navItems } from '~/libs/enum'
+  import { moveTo } from '~/libs/animation'
+  import { onClickOutside } from '@vueuse/core'
 
   const navbarExpanded = ref(false)
+
+  const nav = ref(null)
+  onClickOutside(nav, (event) => (navbarExpanded.value = false))
 
   const toggleNavbar = () => {
     navbarExpanded.value = !navbarExpanded.value

@@ -8,7 +8,10 @@
       </span>
       <ul class="flex-center flex-wrap gap-8 text-sm">
         <li v-for="navItem in navItems" :key="navItem.name">
-          <a :href="navItem.href" class="hover:text-primary-light transitable">
+          <a
+            @click="moveTo(navItem.to)"
+            class="hover:text-primary-light transitable hoverable"
+          >
             {{ navItem.name }}
           </a>
         </li>
@@ -19,6 +22,7 @@
 
 <script setup lang="ts">
   import { navItems } from '~/libs/enum'
+  import { moveTo } from '~/libs/animation'
 
   // const { $date } = useNuxtApp()
   // const currentYear = $date().format('YYYY')

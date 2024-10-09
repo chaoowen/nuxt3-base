@@ -1,5 +1,5 @@
 <template>
-  <div id="skills">
+  <div id="skills" class="pt-20">
     <ContentSwiper :images="images" :section="section" />
   </div>
 </template>
