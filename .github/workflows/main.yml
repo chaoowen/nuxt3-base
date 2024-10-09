@@ -29,3 +29,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist # Nuxt 生成的靜態文件目錄
+          publish_branch: gh-pages # 指定部署到 gh-pages 分支
