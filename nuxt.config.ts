@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    baseURL: '/nuxt3-base/',
+  },
+
   compatibilityDate: '2024-04-03',
 
   devtools: { enabled: true },
@@ -16,6 +20,7 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
