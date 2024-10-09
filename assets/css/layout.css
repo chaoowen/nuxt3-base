@@ -9,7 +9,7 @@
 
   @screen md {
     --container-size: theme('screens.md');
-    --header-height: 4.75rem;
+    --header-height: 4.5rem;
   }
 
   @screen lg {
@@ -18,10 +18,27 @@
 
   @screen xl {
     --container-size: theme('screens.xl');
-    --header-height: 5.5rem;
   }
 
   @screen 2xl {
     --container-size: theme('screens.2xl');
   }
+}
+
+html {
+  @apply overflow-x-hidden overflow-y-auto scroll-smooth;
+}
+
+body {
+  @apply bg-white text-gray-darkest;
+  @apply dotgothic16-regular;
+  /* @apply zen-maru-gothic-regular; */
+
+  /* font-family: 'Noto Sans TC'; */
+}
+
+.f-container {
+  @apply mx-auto px-5 md:px-20 xl:px-0;
+
+  max-width: var(--container-max-width);
 }

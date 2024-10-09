@@ -33,14 +33,14 @@ export default {
         darkest: '#212121',
       },
       primary: {
-        light: '#EEF7EC',
-        DEFAULT: '#4C8355',
-        dark: '#ad1457',
+        light: '#C2BB93',
+        DEFAULT: '#85815D',
+        dark: '#505150',
       },
       secondary: {
-        light: '#9fa8da',
-        DEFAULT: '#3f51b5',
-        dark: '#283593',
+        light: '#F2EDE4',
+        DEFAULT: '#E2DBCA',
+        dark: '#CEB99E',
       },
       danger: {
         light: '#ffebee',
@@ -79,6 +79,6 @@ export default {
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
     './app.{js,ts,vue}',
-    "./node_modules/flowbite/**/*.{js,ts}"
+    './node_modules/flowbite/**/*.{js,ts}',
   ],
 }
