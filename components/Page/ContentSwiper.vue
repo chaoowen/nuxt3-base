@@ -21,7 +21,7 @@
       </div>
 
       <!-- 圖片輪播區塊 -->
-      <div class="w-full md:w-1/2 overflow-hidden">
+      <div class="mx-auto w-5/6 md:w-1/3 overflow-hidden">
         <div class="relative responsive ratio-1by1">
           <div
             class="transform-group"

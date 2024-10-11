@@ -1,6 +1,6 @@
 <template>
   <div class="relative h-20 xl:h-40">
-    <div ref="leafRef" class="absolute right-0 bottom-0 w-40 md:w-60">
+    <div ref="leafRef" class="absolute right-0 -bottom-2 w-24 md:w-32">
       <img :src="leaf" alt="leaf" />
     </div>
   </div>

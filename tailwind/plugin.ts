@@ -67,8 +67,11 @@ export const helpers = plugin(({ addUtilities, addComponents }) => {
     '.flex-center': {
       '@apply flex items-center justify-center': {},
     },
+    '.inline-flex-center': {
+      '@apply inline-flex items-center justify-center': {},
+    },
     '.absolute-center': {
-      '@apply absolute translate-x-half translate-y-half right-half bottom-half':
+      '@apply absolute translate-x-1/2 translate-y-1/2 right-1/2 bottom-1/2':
         {},
     },
   })

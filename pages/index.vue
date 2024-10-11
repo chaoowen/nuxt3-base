@@ -1,7 +1,10 @@
 <template>
-  <IntroductionSection />
-  <IndexCoverMain />
-  <SkillsSection />
-  <IndexRunning />
-  <IndexCoverAI />
+  <div class="overflow-hidden">
+    <IntroductionSection />
+    <IndexCoverMain />
+    <SkillsSection />
+    <ExperienceSection />
+    <IndexCoverAI />
+    <IndexRunning />
+  </div>
 </template>

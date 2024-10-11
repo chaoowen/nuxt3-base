@@ -19,7 +19,7 @@ export const runningAnimation = (target, width: number) => {
   tl.fromTo(
     target,
     {
-      x: 400,
+      x: 200,
     },
     {
       x: -width,
