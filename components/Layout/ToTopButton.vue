@@ -36,7 +36,11 @@
 <style scoped>
   .to-top-button {
     @apply fixed z-10 right-6 bottom-6 xl:right-12;
-    @apply w-12 h-12 xl:w-14 xl:h-14 rounded-full bg-primary;
+    @apply w-12 h-12 xl:w-14 xl:h-14 rounded-full bg-primary transitable;
+
+    &:hover {
+      @apply bg-primary-light;
+    }
   }
 
   .to-top-button.absolute-position {

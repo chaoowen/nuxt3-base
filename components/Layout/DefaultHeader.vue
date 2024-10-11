@@ -5,7 +5,7 @@
     >
       <button
         type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-primary rounded-lg md:hidden hover:bg-gray-100"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-primary rounded-lg md:hidden hover:bg-secondary-light transitable"
         @click="toggleNavbar"
       >
         <span class="sr-only">Open main menu</span>

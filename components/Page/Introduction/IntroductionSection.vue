@@ -3,9 +3,30 @@
     <div class="flex-center">
       <div class="inline-flex flex-col items-start space-y-2">
         <div class="inline-block text-[3rem] md:text-[4rem] text-primary">
-          <p class="ubuntu-medium">Hi There</p>
           <p class="ubuntu-medium">
-            I'm <span class="text-secondary-dark">Chaowen</span>
+            <span
+              v-for="(letter, index) in splitText('Hi There')"
+              :key="index"
+              class="hover-text"
+            >
+              {{ letter }}
+            </span>
+          </p>
+          <p class="ubuntu-medium">
+            <span
+              v-for="(letter, index) in splitText('I‘m ')"
+              :key="index"
+              class="hover-text"
+            >
+              {{ letter }}
+            </span>
+            <span
+              v-for="(letter, index) in splitText('Chaowen')"
+              :key="index"
+              class="text-secondary-dark hover-text"
+            >
+              {{ letter }}
+            </span>
           </p>
         </div>
         <div
@@ -26,3 +47,15 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+  function splitText(text: string) {
+    return text.split('')
+  }
+</script>
+
+<style scoped>
+  .hover-text {
+    @apply hover:font-black transitable;
+  }
+</style>
