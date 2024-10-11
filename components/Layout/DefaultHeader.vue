@@ -27,7 +27,7 @@
       </button>
       <div
         class="w-full md:w-auto max-h-0 md:max-h-6 md:mr-10 transitable overflow-hidden"
-        :class="{ 'max-h-[20rem]': navbarExpanded }"
+        :class="{ 'max-h-[40rem]': navbarExpanded }"
       >
         <ul class="flex flex-col md:flex-row gap-8 md:gap-10 py-8 px-4 md:p-0">
           <li v-for="navItem in navItems" :key="navItem.name">

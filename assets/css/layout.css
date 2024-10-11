@@ -25,6 +25,11 @@
   }
 }
 
+* {
+  cursor: url("/cursor-48x48.cur"), auto !important;
+}
+
+
 html {
   @apply overflow-x-hidden overflow-y-auto scroll-smooth;
 }
