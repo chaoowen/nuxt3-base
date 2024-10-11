@@ -30,11 +30,14 @@ html {
 }
 
 body {
-  @apply bg-white text-gray-darkest;
+  @apply bg-white text-primary-dark;
   @apply dotgothic16-regular;
   /* @apply zen-maru-gothic-regular; */
 
   /* font-family: 'Noto Sans TC'; */
+  p, span, div {
+    @apply tracking-wide leading-relaxed;
+  }
 }
 
 .f-container {

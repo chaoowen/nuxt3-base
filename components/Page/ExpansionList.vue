@@ -11,7 +11,7 @@
       @mouseleave="hoverIndex = null"
       @click="handleActiveEvents(event.code)"
     >
-      <p class="text-primary md:text-2xl" :class="titleStyle">
+      <p class="text-primary md:text-xl" :class="titleStyle">
         {{ event.title }}
       </p>
       <div
@@ -87,7 +87,7 @@
 
 <style scoped>
   .event-card {
-    @apply relative flex justify-between py-10 pl-6 md:pl-8 pr-4 rounded-lg hoverable;
+    @apply relative flex justify-between py-8 pl-6 md:pl-8 pr-4 rounded-lg hoverable;
 
     :deep(.icon) {
       @apply w-10 h-10 transition;

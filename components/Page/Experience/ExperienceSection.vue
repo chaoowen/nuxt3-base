@@ -1,9 +1,7 @@
 <template>
   <div class="f-container py-20 xl:py-30">
-    <div class="flex flex-col xl:flex-row gap-10 xl:gap-20">
-      <p class="flex-none xl:pl-10 flex-center text-primary md:text-xl">
-        黑白大廚
-      </p>
+    <div class="flex flex-col xl:flex-row gap-10 md:gap-24 xl:gap-30">
+      <TitleText en="Experience" zh="工作經歷" className="flex-none flex-col" />
       <div>
         <ExpansionList :events="events" />
       </div>

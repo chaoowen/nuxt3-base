@@ -1,5 +1,6 @@
 <template>
   <div id="skills" class="pt-20">
+    <TitleText en="Skills" zh="技能樹" className="text-primary-dark" />
     <ContentSwiper :images="images" :section="section" />
   </div>
 </template>

@@ -55,8 +55,8 @@
           </button>
         </div>
         <div
-          class="flex xl:hidden justify-end pt-2 text-subtitle-lg"
-          :class="{ 'md:!justify-start': isReverse }"
+          class="text-right pt-2 text-subtitle-lg"
+          :class="{ 'text-left': isReverse }"
         >
           <span class="text-primary">
             {{ String(currentIndex + 1).padStart(2, '0') }}
@@ -67,18 +67,6 @@
           </span>
         </div>
       </div>
-    </div>
-    <div
-      class="hidden xl:flex justify-end pt-5 text-subtitle-lg"
-      :class="{ 'md:!justify-start': isReverse }"
-    >
-      <span class="text-primary">
-        {{ String(currentIndex + 1).padStart(2, '0') }}
-      </span>
-      <span class="px-2 text-gray-lighter">|</span>
-      <span class="text-gray">
-        {{ String(section.length).padStart(2, '0') }}
-      </span>
     </div>
   </div>
 </template>
