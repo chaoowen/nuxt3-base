@@ -2,7 +2,7 @@
   <div class="relative parallax overflow-hidden">
     <div class="w-full h-70 md:h-130 xl:h-187 overflow-hidden">
       <img
-        class="parallaxImage w-full h-full object-cover"
+        class="parallaxImage w-full h-[110%] object-cover"
         :src="bgImage"
         alt="bg-cover"
       />

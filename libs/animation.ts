@@ -90,7 +90,7 @@ export const setParallax = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: event,
-        start: () => (i ? 'top bottom' : 'top top'),
+        start: 'top bottom',
         end: 'bottom top',
         scrub: 0.1,
         invalidateOnRefresh: true,
@@ -100,10 +100,10 @@ export const setParallax = () => {
     tl.fromTo(
       image,
       {
-        y: () => (i ? -window.innerHeight * getRatio(event) * 0.3 : 0),
+        y: () => -window.innerHeight * getRatio(event) * 0.08,
       },
       {
-        y: () => window.innerHeight * (1 - getRatio(event)) * 0.3,
+        y: () => window.innerHeight * (1 - getRatio(event)) * 0.08,
         ease: 'none',
       }
     )
