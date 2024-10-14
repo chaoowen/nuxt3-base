@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20 space-y-10">
+  <div class="relative py-20 space-y-10">
     <div class="flex-center">
       <div class="inline-flex flex-col items-start space-y-2">
         <div class="inline-block text-[3rem] md:text-[4rem] text-primary">
@@ -45,10 +45,17 @@
       </p>
       <p>共同協作出使用者友善的網站</p>
     </div>
+    <ScrollRotateIcon
+      :image="leafImage"
+      name="rollingLeaf"
+      class="w-20 h-20 md:w-32 md:h-32 xl:w-48 xl:h-48 -rotate-[20deg] absolute -right-4 md:right-4 -bottom-10 z-10"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
+  import leafImage from '~/assets/images/leaf-2.png'
+
   function splitText(text: string) {
     return text.split('')
   }

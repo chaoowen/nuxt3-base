@@ -65,16 +65,16 @@ export const scrollRotate = (options: RotateOptions) => {
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: '#skills',
+        trigger: '#top',
         pin: false,
         scrub: 2,
-        start: 'top center',
+        start: 'top bottom',
         end: 'bottom top',
       },
     })
     .to(target, {
-      rotate: clockwise ? '+=432' : '-=432',
-      duration: 1,
+      rotate: clockwise ? '+=720' : '-=720',
+      duration: 4,
       ease: 'none',
       delay: delay,
     })
