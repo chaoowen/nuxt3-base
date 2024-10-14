@@ -7,6 +7,7 @@
     <IndexCoverAI />
     <CollectionSection />
     <IndexHoverImage />
+    <ContactSection />
     <IndexRunning />
   </div>
 </template>

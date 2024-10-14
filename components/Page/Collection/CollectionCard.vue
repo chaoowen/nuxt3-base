@@ -1,13 +1,13 @@
 <template>
   <div class="relative">
     <div
-      class="w-[96%] min-h-20 ml-auto p-6 pl-10 bg-secondary-lighter rounded-lg card-shadow"
+      class="w-[92%] sm:w-[94%] lg:w-[95%] xl:w-[97%] min-h-20 ml-auto p-6 pl-10 bg-secondary-lighter rounded-lg card-shadow"
     >
       <p>{{ title }}</p>
-      <p class="ubuntu-medium">{{ subtitle }}</p>
+      <p class="ubuntu-medium text-sm">{{ subtitle }}</p>
       <p class="pt-1">{{ content }}</p>
     </div>
-    <div class="leaf-icon">
+    <div class="leaf-icon w-12 h-12 md:w-16 md:h-16">
       <img class="w-5" src="~/assets/images/leaf-2.png" alt="leaf-icon" />
     </div>
   </div>
@@ -26,7 +26,7 @@
 <style scoped>
   .leaf-icon {
     @apply absolute left-0 top-1/2 -translate-y-1/2 z-10;
-    @apply w-16 h-16 flex-center bg-secondary rounded-full;
+    @apply flex-center bg-secondary rounded-full;
   }
 
   .card-shadow {

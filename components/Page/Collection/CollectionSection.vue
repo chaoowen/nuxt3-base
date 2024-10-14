@@ -1,7 +1,7 @@
 <template>
-  <div class="f-container py-10 flex flex-col gap-10">
+  <div id="collection" class="f-container py-10 flex flex-col gap-10">
     <TitleText en="Experience" zh="工作經歷" className="flex-none flex-col" />
-    <div class="space-y-6">
+    <div class="space-y-6 md:space-y-12">
       <CollectionCard
         v-for="event in events"
         :key="event.title"

@@ -16,7 +16,7 @@
       </p>
       <div
         v-html="ArrowIcon"
-        class="flex-none icon"
+        class="flex-none icon transitable"
         :class="isActive(event.code) ? 'rotate-180' : ''"
       />
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative py-20 space-y-10">
+  <div id="introduction" class="relative py-20 space-y-10">
     <div class="flex-center">
       <div class="inline-flex flex-col items-start space-y-2">
         <div class="inline-block text-[3rem] md:text-[4rem] text-primary">

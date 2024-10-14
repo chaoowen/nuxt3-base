@@ -1,7 +1,7 @@
 <template>
   <footer class="py-10 bg-primary text-white">
     <div
-      class="container w-full mx-auto max-w-screen-xl p-4 flex-center flex-col md:flex-row md:justify-between gap-4"
+      class="f-container w-full mx-auto max-w-screen-xl p-4 flex-center flex-col md:flex-row md:justify-between gap-4"
     >
       <span class="text-sm sm:text-center">
         © 2023 chaowen. All Rights Reserved.
