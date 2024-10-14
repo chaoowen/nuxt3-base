@@ -4,7 +4,7 @@
       ref="imageRef"
       :src="image"
       alt="hover-running-image"
-      class="w-40 md:w-48 xl:w-56"
+      class="w-40 md:w-48"
     />
   </div>
 </template>

@@ -5,6 +5,7 @@
     <SkillsSection />
     <ExperienceSection />
     <IndexCoverAI />
+    <CollectionSection />
     <IndexHoverImage />
     <IndexRunning />
   </div>
