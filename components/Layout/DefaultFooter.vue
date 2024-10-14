@@ -10,7 +10,7 @@
         <li v-for="navItem in navItems" :key="navItem.name">
           <a
             @click="moveTo(navItem.to)"
-            class="hover:text-primary-light transitable hoverable"
+            class="hover:text-secondary-light transitable hoverable"
           >
             {{ navItem.name }}
           </a>

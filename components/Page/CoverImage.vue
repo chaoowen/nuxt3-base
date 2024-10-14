@@ -1,7 +1,11 @@
 <template>
-  <div class="relative">
+  <div class="relative parallax overflow-hidden">
     <div class="w-full h-70 md:h-130 xl:h-187 overflow-hidden">
-      <img class="w-full h-full object-cover" :src="bgImage" alt="bg-cover" />
+      <img
+        class="parallaxImage w-full h-full object-cover"
+        :src="bgImage"
+        alt="bg-cover"
+      />
     </div>
     <div class="w-full absolute right-0 top-0">
       <img class="w-full" :src="topFrame" alt="bg-frame" />
