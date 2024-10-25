@@ -23,7 +23,7 @@
             v-if="event.link"
             :href="event.link"
             target="_blank"
-            class="ubuntu-medium text-primary underline underline-offset-4 hover:text-primary-light"
+            class="ubuntu-medium text-primary underline underline-offset-4 transitable hover:text-primary-light"
           >
             {{ event.text }}
           </a>

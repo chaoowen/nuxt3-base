@@ -31,16 +31,19 @@
       "
     />
     <div
-      v-if="event.text"
+      v-if="event.text || event.list"
       class="px-10 transition-all duration-400 overflow-hidden"
       :class="
         isActive(event.code) ? 'max-h-160 py-10' : 'max-h-0 p-0 invisible'
       "
     >
-      <ul v-if="Array.isArray(event.text)" class="list-decimal">
-        <li v-for="words in event.text" :key="words">{{ words }}</li>
+      <p v-if="event.date" class="pb-2 text-sm text-gray-dark">
+        {{ event.date }}
+      </p>
+      <p v-if="event.text" class="pb-4">{{ event.text }}</p>
+      <ul v-if="event.list" class="list-disc pl-6 space-y-2 text-gray-dark">
+        <li v-for="words in event.list" :key="words">{{ words }}</li>
       </ul>
-      <p v-else>{{ event.text }}</p>
     </div>
   </div>
 </template>
@@ -53,7 +56,9 @@
       title: string
       code: string
       component?: object
-      text?: string | string[]
+      date?: string
+      text?: string
+      list?: string[]
     }[]
     titleStyle?: string
   }
