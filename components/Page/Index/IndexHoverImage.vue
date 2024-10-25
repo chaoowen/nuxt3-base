@@ -11,12 +11,12 @@
 
 <script setup lang="ts">
   import image from '~/assets/images/leaf-3.png'
-  import { hoverMovingEffect } from '~/libs/animation'
+  // import { hoverMovingEffect } from '~/libs/animation'
 
-  const imageRef = ref<HTMLElement | null>(null)
+  // const imageRef = ref<HTMLElement | null>(null)
 
-  onMounted(() => {
-    if (!imageRef.value) return
-    hoverMovingEffect(imageRef.value)
-  })
+  // onMounted(() => {
+  //   if (!imageRef.value) return
+  //   hoverMovingEffect(imageRef.value)
+  // })
 </script>

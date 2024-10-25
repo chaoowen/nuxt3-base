@@ -14,22 +14,72 @@
 <script setup lang="ts">
   const events = [
     {
-      title: '火焰獅',
-      subtitle: '2021/01/01',
+      title: 'Go Green With Taiwan',
+      subtitle: '2024/06 - 2024/06 工作專案',
+      link: 'https://gogreen.taiwanexcellence.org/',
       content:
-        '火焰獅是一種充滿力量的火屬性虛構寶貝，擁有燃燒般的鬃毛和鋒利的爪子。牠棲息在火山附近，能夠利用熔岩來增強自己的力量。當火焰獅憤怒時，牠的鬃毛會變得更加炙熱，能夠放出高溫的火焰攻擊對手。火焰獅具有極強的戰鬥意志，無論面對多麼強大的敵人，牠總是毫不畏懼。牠的招牌技能是「熔岩衝擊」，能夠瞬間釋放熾熱的火焰來壓制對手。火焰獅適合在困難的環境下作戰，對牠來說，火焰代表著希望與力量。',
+        '專案架構使用 Nuxt3 + Tailwindcss + GSAP 動畫，讓網站看起來更生動',
     },
     {
-      title: '水晶蝶',
-      subtitle: '2021/01/01',
+      title: '募資平台網站畫面調整',
+      subtitle: '2024/03 - 2024/05 工作專案',
+      link: '',
       content:
-        '水晶蝶是一種優雅且神秘的蟲屬性和冰屬性虛構寶貝，翅膀上覆蓋著晶瑩剔透的冰晶。牠喜歡生活在寒冷的山區，並以冰花為食。水晶蝶能夠釋放冰雪來保護自己，也能用來迷惑對手。牠的翅膀能反射陽光，使牠在空中飛行時看起來像一片飄動的冰霧。水晶蝶擅長使用冰系技能「冰風暴」，能夠召喚強大的暴風雪，來減弱敵人的速度。牠的外表雖然柔弱，但其防禦能力極為強大。',
+        '平台主要使用 PHP Laravel Blade 與部分 Vue 頁面，配合平台既有架構做 Vue & html 的畫面切版',
     },
     {
-      title: '火焰雷電水晶蜥',
-      subtitle: '2021/01/01',
+      title: '寶雅新春活動登錄',
+      subtitle: '2024/11 - 2024/12 工作專案',
+      link: '',
       content:
-        '雷電蜥是一種電屬性與毒屬性的虛構寶貝，牠的身體帶有強烈的靜電，能夠在短時間內爆發出驚人的電擊。牠主要棲息在熱帶叢林和雷雨頻發的地區，吸收雷電作為能量來源。雷電蜥天生具有極快的移動速度，能夠輕易閃避敵人的攻擊。牠的標誌性技能「雷毒閃擊」能夠同時對敵人造成電擊與中毒的雙重傷害，使敵人陷入長期的弱勢狀態。雷電蜥以靈活與強大的電能為特點，通常在戰鬥中占據主動地位。',
+        '專案架構使用 Nuxt3 + Tailwindcss + Axios，並串接寶雅 POYA SSO 做會員登錄，並讓會員在網站上可以登錄活動序號、查詢序號紀錄',
+    },
+    {
+      title: '計算卡路里網站',
+      subtitle: '2024/01 - 2024/02 工作專案',
+      link: 'https://aseecalories.org/',
+      content:
+        '專案架構使用 Nuxt3 + Tailwindcss + Axios，製作前端畫面讓使用者操作，並串接後端 api 呈現計算結果',
+    },
+    {
+      title: '美語購課網站',
+      subtitle: '2022/08 - 2022/10 工作專案',
+      link: '',
+      content:
+        '專案架構使用 Nuxt2 + Node.js + Tailwindcss，三位工程師協作完成的購課與師生課程預約系統',
+      list: [
+        '頁面切版與 api 資料串接',
+        'FB Messanger 與頁面分享功能',
+        'Linepay 與信用卡金流串接',
+        '登入 Token 與 Refresh Token 實作',
+      ],
+    },
+    {
+      title: '美語購課網站',
+      subtitle: '2021/12 - 2022/05 工作專案',
+      link: 'https://www.ynso.com.tw/online/',
+      content:
+        '專案架構使用 Nuxt2 + Node.js + Tailwindcss，三位工程師協作完成的購課與師生課程預約系統',
+      list: [
+        '頁面切版與 api 資料串接',
+        'FB Messanger 與頁面分享功能',
+        'Linepay 與信用卡金流串接',
+        '登入 Token 與 Refresh Token 實作',
+      ],
+    },
+    {
+      title: '小春堂和菓子專門店',
+      subtitle: '2021/06 - 2021/08 轉職課程｜團隊專題作品',
+      link: 'https://tibamef2e.com/tfd102/project/g3/',
+      content:
+        '此為六人團隊專題作品，小春堂是和菓子專賣店電商網站。除了切版與動畫，還有實際建立資料庫，並透過 Ajax 與 PHP 向 MySQL 資料庫傳送與拿取資料，做到一個完整的前後端串接。',
+    },
+    {
+      title: 'LANZI 懶系酒吧',
+      subtitle: '2021/03 - 2021/06 轉職課程｜個人作品',
+      link: 'https://chaoowen.github.io/TFD102-07/index.html',
+      content:
+        '此為首個個人專題作品，學習使用 Adobe XD 做 Logo 與網頁設計，並使用 html / css / JavaScript 做網頁切版與動畫特效製作簡單網站。',
     },
   ]
 </script>

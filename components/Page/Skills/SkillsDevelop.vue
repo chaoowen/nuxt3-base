@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-4 text-primary">
+  <div class="space-y-4 text-primary ubuntu-medium">
     <div class="font-semibold text-primary-dark">
       <p>2021/03 於 tibame 前端工程師就業養成班進修</p>
       <p>2021/10 起擔任前端工程師</p>

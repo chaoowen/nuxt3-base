@@ -16,7 +16,7 @@
       </p>
       <div
         v-html="ArrowIcon"
-        class="flex-none icon transitable"
+        class="flex-none w-12 h-12 icon transitable"
         :class="isActive(event.code) ? 'rotate-180' : ''"
       />
     </div>
@@ -32,7 +32,7 @@
     />
     <div
       v-if="event.text || event.list"
-      class="px-10 transition-all duration-400 overflow-hidden"
+      class="ubuntu-medium px-10 transition-all duration-400 overflow-hidden"
       :class="
         isActive(event.code) ? 'max-h-160 py-10' : 'max-h-0 p-0 invisible'
       "
