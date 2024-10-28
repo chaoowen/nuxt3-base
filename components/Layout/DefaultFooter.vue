@@ -4,7 +4,7 @@
       class="f-container w-full mx-auto max-w-screen-xl p-4 flex-center flex-col md:flex-row md:justify-between gap-4"
     >
       <span class="text-sm sm:text-center">
-        © 2023 chaowen. All Rights Reserved.
+        © {{ currentYear }} chaowen. All Rights Reserved.
       </span>
       <ul class="flex-center flex-wrap gap-8 text-sm">
         <li v-for="navItem in navItems" :key="navItem.name">
@@ -24,6 +24,5 @@
   import { navItems } from '~/libs/enum'
   import { moveTo } from '~/libs/animation'
 
-  // const { $date } = useNuxtApp()
-  // const currentYear = $date().format('YYYY')
+  const currentYear = computed(() => new Date().getFullYear())
 </script>

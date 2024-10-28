@@ -5,7 +5,7 @@
       <p>2021/10 起擔任前端工程師</p>
     </div>
     <p>
-      目前使用 nuxt3 + Tailwindcss + vite 進行響應式網站開發，並使用 flowbite
+      目前使用 Nuxt3 + Tailwindcss + Vite 進行響應式網站開發，並使用 flowbite
       建造共用元件模板，提升開發速度。
     </p>
     <p>在程式協作面上，我熟悉 Git 版本控制，能夠有效地協作開發；</p>

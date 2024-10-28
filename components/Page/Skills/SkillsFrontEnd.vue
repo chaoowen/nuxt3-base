@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-4 text-primary ubuntu-medium">
-    <p class="text-primary-dark">未來目標</p>
+    <p class="text-primary-dark font-semibold">未來目標</p>
     <p>
       針對近期崛起的 AI 浪潮，我也正在嘗試使用
       Copilot、AmazonQ、ChatGPT、ClaudAI 等工具，提升寫網站的速度與品質。

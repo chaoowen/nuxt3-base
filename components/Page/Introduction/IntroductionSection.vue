@@ -38,12 +38,12 @@
     </div>
     <div class="f-container text-primary text-center space-y-2">
       <p>
-        我是一名具有兩年經驗的前端工程師，擅長使用 vue3 和 nuxt3 進行網頁開發
+        我是一名具有兩年經驗的前端工程師，擅長使用 Vue3 和 Nuxt3 進行網頁開發
       </p>
       <p>
-        在過去的工作中，我參與了多個項目的前端開發，負責設計與實現交互式功能，並與UIUX、後端工程師緊密合作
+        在過去的工作中，我參與了多個項目的前端開發，實現網站交互式功能
       </p>
-      <p>共同協作出使用者友善的網站</p>
+      <p>並與設計師、後端工程師緊密合作，共同協作出使用者友善的網站</p>
     </div>
     <ScrollRotateIcon
       :image="leafImage"
