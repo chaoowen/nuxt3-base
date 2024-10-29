@@ -15,7 +15,7 @@
   const events = [
     {
       title: 'Go Green With Taiwan',
-      subtitle: '2024/06 - 2024/06 工作專案',
+      subtitle: '2024/06 - 2024/07 工作專案',
       link: 'https://gogreen.taiwanexcellence.org/',
       content:
         '專案架構使用 Nuxt3 + Tailwindcss + GSAP 動畫，讓網站看起來更生動',
@@ -28,18 +28,18 @@
         '平台主要使用 PHP Laravel Blade 與部分 Vue 頁面，配合平台既有架構做 Vue & html 的畫面切版',
     },
     {
-      title: '寶雅新春活動登錄',
+      title: '新春活動登錄序號',
       subtitle: '2024/11 - 2024/12 工作專案',
       link: '',
       content:
-        '專案架構使用 Nuxt3 + Tailwindcss + Axios，並串接寶雅 POYA SSO 做會員登錄，並讓會員在網站上可以登錄活動序號、查詢序號紀錄',
+        '專案架構使用 Nuxt3 + Tailwindcss + Axios，並串接 SSO 做會員登入，讓會員在網站上可以登錄活動序號、查詢序號紀錄',
     },
     {
       title: '計算卡路里網站',
       subtitle: '2024/01 - 2024/02 工作專案',
       link: 'https://aseecalories.org/',
       content:
-        '專案架構使用 Nuxt3 + Tailwindcss + Axios，製作前端畫面讓使用者操作，並串接後端 api 呈現計算結果',
+        '專案架構使用 Nuxt3 + Tailwindcss + Axios，製作前端畫面讓使用者操作，並串接後端 API 呈現計算結果',
     },
     {
       title: '美語購課網站',
@@ -48,7 +48,7 @@
       content:
         '專案架構使用 Nuxt2 + Node.js + Tailwindcss，三位工程師協作完成的購課與師生課程預約系統',
       list: [
-        '頁面切版與 api 資料串接',
+        '頁面切版與 API 資料串接',
         'FB Messanger 與頁面分享功能',
         'Linepay 與信用卡金流串接',
         '登入 Token 與 Refresh Token 實作',
@@ -61,7 +61,7 @@
       content:
         '專案架構使用 Nuxt2 + Node.js + Tailwindcss，三位工程師協作完成的購課與師生課程預約系統',
       list: [
-        '頁面切版與 api 資料串接',
+        '頁面切版與 API 資料串接',
         'FB Messanger 與頁面分享功能',
         'Linepay 與信用卡金流串接',
         '登入 Token 與 Refresh Token 實作',
