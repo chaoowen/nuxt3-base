@@ -29,14 +29,14 @@
     },
     {
       title: '新春活動登錄序號',
-      subtitle: '2024/11 - 2024/12 工作專案',
+      subtitle: '2023/11 - 2023/12 工作專案',
       link: '',
       content:
         '專案架構使用 Nuxt3 + Tailwindcss + Axios，並串接 SSO 做會員登入，讓會員在網站上可以登錄活動序號、查詢序號紀錄',
     },
     {
       title: '計算卡路里網站',
-      subtitle: '2024/01 - 2024/02 工作專案',
+      subtitle: '2023/01 - 2023/02 工作專案',
       link: 'https://aseecalories.org/',
       content:
         '專案架構使用 Nuxt3 + Tailwindcss + Axios，製作前端畫面讓使用者操作，並串接後端 API 呈現計算結果',
