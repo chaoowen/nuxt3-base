@@ -43,19 +43,6 @@
     },
     {
       title: '美語購課網站',
-      subtitle: '2022/08 - 2022/10 工作專案',
-      link: '',
-      content:
-        '專案架構使用 Nuxt2 + Node.js + Tailwindcss，三位工程師協作完成的購課與師生課程預約系統',
-      list: [
-        '頁面切版與 API 資料串接',
-        'FB Messanger 與頁面分享功能',
-        'Linepay 與信用卡金流串接',
-        '登入 Token 與 Refresh Token 實作',
-      ],
-    },
-    {
-      title: '美語購課網站',
       subtitle: '2021/12 - 2022/05 工作專案',
       link: 'https://www.ynso.com.tw/online/',
       content:
