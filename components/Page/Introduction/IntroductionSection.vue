@@ -38,7 +38,7 @@
     </div>
     <div class="f-container text-primary text-center space-y-2">
       <p>
-        我是一名具有兩年經驗的前端工程師，擅長使用 Vue3 和 Nuxt3 進行網頁開發
+        我是一名有近三年工作經驗的前端工程師，擅長使用 Vue3 和 Nuxt3 進行網頁開發
       </p>
       <p>
         在過去的工作中，我參與了多個項目的前端開發，實現網站交互式功能
