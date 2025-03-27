@@ -1,7 +1,7 @@
 <template>
   <ul class="list-disc pl-6 space-y-4 ubuntu-medium">
     <li>HTML5 / CSS3 / JavaScript (ES6+) / TypeScript / jquery</li>
-    <li>Sass / TailwindCSS / Flowbite / Quasar</li>
+    <li>Sass / TailwindCSS / Flowbite / Quasar / NaiveUI</li>
     <li>Vue2 / Nuxt2 / Vue3 / Nuxt3</li>
     <li>vee-validate / pinia / i18n / axios</li>
     <li>Git 版本控制 / vite / prettier</li>
