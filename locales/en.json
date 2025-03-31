@@ -1,15 +1,112 @@
 {
-  "hello": "Hello",
-  "welcome": "Welcome to our website",
   "home": "Home",
   "about": "About",
+  "skills": "Skills",
+  "experience": "Experience",
+  "collection": "Portfolio",
   "contact": "Contact",
+  "resumeDownload": "Download Resume",
+  "visit": "Visit Website",
   "language": "Language",
   "language_name": {
-    "chinese": "Chinese",
+    "chinese": "中文",
     "english": "English"
   },
-  "ui": {
-    "dropdown_menu": "Dropdown menu"
+  "intro": {
+    "part1": "I am a front-end engineer with nearly three years of work experience, specializing in web development using Vue3 and Nuxt3",
+    "part2": "In my previous roles, I've participated in front-end development for multiple projects, implementing interactive website features",
+    "part3": "And worked closely with designers and back-end engineers to collaboratively create user-friendly websites"
+  },
+  "skillsContent": {
+    "experience": {
+      "advance": "2021/03 Studied in tibame Front-End Engineer Training Program",
+      "work": "2021/10 Started working as a Front-End Engineer",
+      "framework": "Currently using Nuxt3 + Tailwindcss + Vite to develop responsive websites. Using UI frameworks to build shared component templates to enhance development speed.",
+      "teamwork": "In terms of code collaboration, I am proficient with Git version control and can effectively develop with other engineers;",
+      "design": "For user experience, I communicate and collaborate with design teams to transform Figma designs into web implementations, and suggest process optimizations;",
+      "api": "For API integration, I work closely with back-end engineers and DevOps to ensure websites function correctly."
+    },
+    "future": {
+      "title": "Future Goals",
+      "ai": "In response to the recent AI surge, I'm also exploring tools like Copilot, AmazonQ, ChatGPT, and ClaudAI to improve the speed and quality of web development.",
+      "coding": "Currently, I can deliver complete websites within planned schedules. In the future, I hope to continue improving code quality and website performance, and try unit testing.",
+      "frontend": "My primary expertise is developing with the Vue framework, but I'm interested in working with React, Angular, and other frameworks to gain deeper understanding of different front-end architectures.",
+      "backend": "Additionally, while my back-end development experience is relatively limited, I have participated in PHP & Node.js back-end development work, and am currently self-learning .NET, which has allowed me to appreciate the different challenges of front-end and back-end work, and to approach projects from various perspectives."
+    }
+  },
+  "experienceContent": {
+    "fontech": {
+      "title": "Fontech - Front-End Engineer",
+      "time": "2023/10 - 2025/03",
+      "subtitle": "The challenges at a consulting company include not only developing new projects but also maintaining existing large legacy projects, finding ways to implement new requirements within complex logic",
+      "content1": "Created over 5 event websites, using Nuxt3 + Tailwindcss + TypeScript component templates to accelerate development",
+      "content2": "Created 1 HTML + SASS + JavaScript website",
+      "content3": "Maintained 4 PHP Laravel Blade legacy projects",
+      "content4": "Maintained 2 accessibility-compliant websites, fixing issues and passing certification",
+      "content5": "Maintained 1 large-scale Nuxt2 + GraphQL website"
+    },
+    "tkb": {
+      "title": "Taiwan Knowledge Bank - IT Department Specialist",
+      "time": "2021/10 - 2023/02",
+      "subtitle": "",
+      "content1": "Collaborated with colleagues to complete 2 Nuxt2-based course booking and purchasing systems",
+      "content2": "Independently completed 1 Nuxt2-based online problem-solving website",
+      "content3": "Created Figma designs for 1 customer service system proposal",
+      "content4": "Completed multiple HTML layout and JavaScript/jQuery functionality implementations for non-SPA projects",
+      "content5": "Self-taught Flutter and completed UI and functionality for 2 mobile apps"
+    },
+    "showtime": {
+      "title": "Showtime Cinema - Marketing Planning Specialist",
+      "time": "2018/05 - 2021/03",
+      "subtitle": "Mainly responsible for event coordination and marketing proposals, a job I performed well but gradually grew weary of. Through communicating with engineers about website changes, I began to learn web development, and after self-study confirmed my interest, I enrolled in a career transition course",
+      "content1": "Served as liaison with engineers for website and APP content modification, maintenance, and redesign",
+      "content2": "Led training for 8 cinemas on using digital signage software, reducing update time by 15%",
+      "content3": "Completed 11 cross-industry collaborations and proposals, facilitating partnerships with Ubereats, Search & Sale Media, LINE Pay, etc.",
+      "content4": "Participated in nearly 20 premieres, served as the main contact for over 100 events, and 6 new cinema openings",
+      "content5": "Developed and marketed merchandise for 5 films, promotional materials, and special seasonal and membership events",
+      "content6": "Managed social media and handled over 1000 customer service inquiries"
+    }
+  },
+  "collectionContent": {
+    "title": "Portfolio",
+    "goGreen": {
+      "name": "Go Green With Taiwan",
+      "time": "2024/06 - 2024/07 Work Project",
+      "subtitle": "Project structure uses Nuxt3 + Tailwindcss + GSAP animation to create a more dynamic website"
+    },
+    "flyingV": {
+      "name": "Crowdfunding Platform UI Adjustments",
+      "time": "2024/03 - 2024/05 Work Project",
+      "subtitle": "The platform primarily uses PHP Laravel Blade with some Vue pages, customizing extensions within the platform's existing architecture, adding Vue & HTML layouts"
+    },
+    "poya": {
+      "name": "New Year Serial Number Registration",
+      "time": "2023/11 - 2023/12 Work Project",
+      "subtitle": "Project structure uses Nuxt3 + Tailwindcss + GSAP animation, and integrates platform member SSO login, allowing members to register event serial numbers and check registration records on the website"
+    },
+    "calories": {
+      "name": "Calorie Calculator Website",
+      "time": "2023/01 - 2023/02 Work Project",
+      "subtitle": "Project structure uses Nuxt3 + Tailwindcss + Axios, creating frontend UI for users and integrating backend APIs to display calculation results"
+    },
+    "tkb": {
+      "name": "English Course Purchasing Website",
+      "time": "2021/12 - 2022/05 Work Project",
+      "subtitle": "Project structure uses Nuxt2 + Node.js + Tailwindcss, a course purchasing and teacher-student appointment system completed by three engineers working together",
+      "content1": "Page layout and API data integration",
+      "content2": "FB Messenger and page sharing features",
+      "content3": "Linepay and credit card payment integration",
+      "content4": "Implementation of login Token and Refresh Token"
+    },
+    "wagashi": {
+      "name": "Wagashi Japanese Sweets Shop",
+      "time": "2021/06 - 2021/08 Career Transition Course | Team Project",
+      "subtitle": "This six-person team project is an e-commerce website for a Japanese confectionery store. Besides layout and animations, we also established an actual database and used Ajax and PHP to send and retrieve data from MySQL, achieving complete front-end and back-end integration"
+    },
+    "lanzi": {
+      "name": "LANZI Bar",
+      "subtitle": "2021/03 - 2021/06 Career Transition Course | Personal Project",
+      "content": "This is my first personal project, learning to use Adobe XD for logo and web design, and using HTML/CSS/JavaScript for web layout and animation effects to create a simple website"
+    }
   }
 }

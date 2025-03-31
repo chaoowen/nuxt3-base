@@ -8,10 +8,10 @@ enum LinkHook {
 }
 
 export const navItems = [
-  { name: '關於我', to: LinkHook.INTRODUCTION },
-  { name: '技能樹', to: LinkHook.SKILLS },
-  { name: '經歷', to: LinkHook.EXPERIENCE },
-  { name: '作品集', to: LinkHook.COLLECTION },
+  { name: 'about', to: LinkHook.INTRODUCTION },
+  { name: 'skills', to: LinkHook.SKILLS },
+  { name: 'experience', to: LinkHook.EXPERIENCE },
+  { name: 'collection', to: LinkHook.COLLECTION },
   // { name: '願景', to: LinkHook.FUTURE },
-  { name: '聯繫我', to: LinkHook.CONTACT },
+  { name: 'contact', to: LinkHook.CONTACT },
 ]

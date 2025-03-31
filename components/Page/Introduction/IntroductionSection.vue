@@ -37,13 +37,9 @@
       </div>
     </div>
     <div class="f-container text-primary text-center space-y-2">
-      <p>
-        我是一名有近三年工作經驗的前端工程師，擅長使用 Vue3 和 Nuxt3 進行網頁開發
-      </p>
-      <p>
-        在過去的工作中，我參與了多個項目的前端開發，實現網站交互式功能
-      </p>
-      <p>並與設計師、後端工程師緊密合作，共同協作出使用者友善的網站</p>
+      <p>{{ $t('intro.part1') }}</p>
+      <p>{{ $t('intro.part2') }}</p>
+      <p>{{ $t('intro.part3') }}</p>
     </div>
     <ScrollRotateIcon
       :image="leafImage"

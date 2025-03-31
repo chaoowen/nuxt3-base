@@ -41,19 +41,21 @@
   import fileIcon from '~/assets/icons/file.svg'
   import mailboxIcon from '~/assets/icons/mail-box.svg'
 
+  const { t } = useI18n()
+  
   const events = [
-    {
-      icon: phoneIcon,
-      text: '0939-264-701',
-    },
-    {
-      icon: fileIcon,
-      link: 'https://chaoowen.github.io/nuxt3-base/chaowen-resume.pdf',
-      text: '履歷下載',
-    },
-    {
-      icon: mailboxIcon,
-      text: 'chanffe@gmail.com',
-    },
-  ]
+      {
+        icon: phoneIcon,
+        text: '0939-264-701',
+      },
+      {
+        icon: fileIcon,
+        link: 'https://chaoowen.github.io/nuxt3-base/chaowen-resume.pdf',
+        text: t('resumeDownload'),
+      },
+      {
+        icon: mailboxIcon,
+        text: 'chanffe@gmail.com',
+      },
+    ]
 </script>

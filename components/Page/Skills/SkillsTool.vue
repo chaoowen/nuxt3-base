@@ -4,7 +4,7 @@
     <li>Sass / TailwindCSS / Flowbite / Quasar / NaiveUI</li>
     <li>Vue2 / Nuxt2 / Vue3 / Nuxt3</li>
     <li>vee-validate / pinia / i18n / axios</li>
-    <li>Git 版本控制 / vite / prettier</li>
+    <li>Git / vite / prettier</li>
     <li>Node.js / Docker</li>
   </ul>
 </template>

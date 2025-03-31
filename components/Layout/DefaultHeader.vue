@@ -35,7 +35,7 @@
               class="block text-primary hover:text-primary-dark transitable hoverable"
               @click="moveTo(navItem.to)"
             >
-              {{ navItem.name }}
+              {{ $t(navItem.name) }}
             </a>
           </li>
           <LanguageSwitcher />

@@ -20,7 +20,7 @@
           <p
             class="dotgothic16-regular pb-0.5 text-primary-light transitable group-hover:text-primary"
           >
-            前往網站
+            {{ $t('visit') }}
           </p>
           <div v-html="ArrowIcon" class="-rotate-90 w-8 h-8" />
         </a>

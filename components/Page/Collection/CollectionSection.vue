@@ -12,61 +12,56 @@
 </template>
 
 <script setup lang="ts">
+  const { t } = useI18n()
+
   const events = [
     {
-      title: 'Go Green With Taiwan',
-      subtitle: '2024/06 - 2024/07 工作專案',
+      title: t('collectionContent.goGreen.name'),
+      subtitle: t('collectionContent.goGreen.time'),
       link: 'https://gogreen.taiwanexcellence.org/',
-      content:
-        '專案架構使用 Nuxt3 + Tailwindcss + GSAP 動畫，讓網站看起來更生動',
+      content: t('collectionContent.goGreen.subtitle')
     },
     {
-      title: '募資平台網站畫面調整',
-      subtitle: '2024/03 - 2024/05 工作專案',
+      title: t('collectionContent.flyingV.name'),
+      subtitle: t('collectionContent.flyingV.time'),
       link: '',
-      content:
-        '平台主要使用 PHP Laravel Blade 與部分 Vue 頁面，配合平台既有架構做 Vue & html 的畫面切版',
+      content: t('collectionContent.flyingV.subtitle')
     },
     {
-      title: '新春活動登錄序號',
-      subtitle: '2023/11 - 2023/12 工作專案',
+      title: t('collectionContent.poya.name'),
+      subtitle: t('collectionContent.poya.time'),
       link: '',
-      content:
-        '專案架構使用 Nuxt3 + Tailwindcss + Axios，並串接 SSO 做會員登入，讓會員在網站上可以登錄活動序號、查詢序號紀錄',
+      content: t('collectionContent.poya.subtitle')
     },
     {
-      title: '計算卡路里網站',
-      subtitle: '2023/01 - 2023/02 工作專案',
+      title: t('collectionContent.calories.name'),
+      subtitle: t('collectionContent.calories.time'),
       link: 'https://aseecalories.org/',
-      content:
-        '專案架構使用 Nuxt3 + Tailwindcss + Axios，製作前端畫面讓使用者操作，並串接後端 API 呈現計算結果',
+      content: t('collectionContent.calories.subtitle')
     },
     {
-      title: '美語購課網站',
-      subtitle: '2021/12 - 2022/05 工作專案',
+      title: t('collectionContent.tkb.name'),
+      subtitle: t('collectionContent.tkb.time'),
       link: 'https://www.ynso.com.tw/online/',
-      content:
-        '專案架構使用 Nuxt2 + Node.js + Tailwindcss，三位工程師協作完成的購課與師生課程預約系統',
+      content: t('collectionContent.tkb.subtitle'),
       list: [
-        '頁面切版與 API 資料串接',
-        'FB Messanger 與頁面分享功能',
-        'Linepay 與信用卡金流串接',
-        '登入 Token 與 Refresh Token 實作',
+        t('collectionContent.tkb.content1'),
+        t('collectionContent.tkb.content2'),
+        t('collectionContent.tkb.content3'),
+        t('collectionContent.tkb.content4'),
       ],
     },
     {
-      title: '小春堂和菓子專門店',
-      subtitle: '2021/06 - 2021/08 轉職課程｜團隊專題作品',
+      title: t('collectionContent.wagashi.name'),
+      subtitle: t('collectionContent.wagashi.time'),
       link: 'https://tibamef2e.com/tfd102/project/g3/',
-      content:
-        '此為六人團隊專題作品，小春堂是和菓子專賣店電商網站。除了切版與動畫，還有實際建立資料庫，並透過 Ajax 與 PHP 向 MySQL 資料庫傳送與拿取資料，做到一個完整的前後端串接。',
+      content: t('collectionContent.wagashi.subtitle')
     },
     {
-      title: 'LANZI 懶系酒吧',
-      subtitle: '2021/03 - 2021/06 轉職課程｜個人作品',
+      title: t('collectionContent.lanzi.name'),
+      subtitle: t('collectionContent.lanzi.time'),
       link: 'https://chaoowen.github.io/TFD102-07/index.html',
-      content:
-        '此為首個個人專題作品，學習使用 Adobe XD 做 Logo 與網頁設計，並使用 html / css / JavaScript 做網頁切版與動畫特效製作簡單網站。',
+      content: t('collectionContent.lanzi.subtitle')
     },
   ]
 </script>

@@ -1,6 +1,5 @@
 <template>
   <div class="overflow-hidden">
-    <h1>{{ $t('welcome') }}</h1>
     <IntroductionSection />
     <IndexCoverMain />
     <SkillsSection />
