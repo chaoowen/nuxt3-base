@@ -1,7 +1,7 @@
 <template>
   <nav ref="nav" class="fixed top-0 left-0 w-full bg-secondary z-40 shadow-md">
     <div
-      class="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto py-1 px-3 md:p-6 transitable"
+      class="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto py-1 px-3 md:p-4 transitable"
     >
       <button
         type="button"
@@ -26,10 +26,10 @@
         </svg>
       </button>
       <div
-        class="w-full md:w-auto max-h-0 md:max-h-6 md:mr-10 transitable overflow-hidden"
+        class="w-full md:w-auto max-h-0 md:max-h-10 md:mr-10 transitable overflow-hidden"
         :class="{ 'max-h-[40rem]': navbarExpanded }"
       >
-        <ul class="flex flex-col md:flex-row gap-8 md:gap-10 py-8 px-4 md:p-0">
+        <ul class="flex flex-col items-center md:flex-row gap-8 md:gap-10 py-8 px-4 md:p-0">
           <li v-for="navItem in navItems" :key="navItem.name">
             <a
               class="block text-primary hover:text-primary-dark transitable hoverable"
@@ -38,6 +38,7 @@
               {{ navItem.name }}
             </a>
           </li>
+          <LanguageSwitcher />
         </ul>
       </div>
     </div>
@@ -56,6 +57,5 @@
 
   const toggleNavbar = () => {
     navbarExpanded.value = !navbarExpanded.value
-    console.log('navbarExpanded', navbarExpanded.value)
   }
 </script>

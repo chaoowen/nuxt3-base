@@ -1,0 +1,14 @@
+{
+  "welcome": "歡迎來到我們的網站",
+  "home": "首頁",
+  "about": "關於我們",
+  "contact": "聯繫我們",
+  "language": "語言",
+  "language_name": {
+    "chinese": "中文",
+    "english": "英文"
+  },
+  "ui": {
+    "dropdown_menu": "下拉選單"
+  }
+}
