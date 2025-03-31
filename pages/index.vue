@@ -21,6 +21,9 @@
 
   onMounted(() => {
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
-    setParallax()
+    // 確保 DOM 完全載入後才執行 setParallax
+    nextTick(() => {
+      setParallax()
+    })
   })
 </script>

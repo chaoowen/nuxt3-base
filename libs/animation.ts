@@ -81,33 +81,54 @@ export const scrollRotate = (options: RotateOptions) => {
 }
 
 export const setParallax = () => {
-  const events = gsap.utils.toArray('.parallax')
-  const getRatio = (el) =>
-    window.innerHeight / (window.innerHeight + el.offsetHeight)
+  // 在生產環境移除調試輸出
+  const isProduction = process.env.NODE_ENV === 'production'
+  // 檢測裝置性能
+  const isLowPerformanceDevice = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  
+  try {
+    const events = gsap.utils.toArray('.parallax')
+    const getRatio = (el) =>
+      window.innerHeight / (window.innerHeight + el.offsetHeight)
 
-  events.forEach((event, i) => {
-    const image = event.querySelectorAll('.parallaxImage')
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: event,
-        start: 'top bottom',
-        end: 'bottom top',
-        scrub: 0.1,
-        invalidateOnRefresh: true,
-      },
-    })
-
-    tl.fromTo(
-      image,
-      {
-        y: () => -window.innerHeight * getRatio(event) * 0.08,
-      },
-      {
-        y: () => window.innerHeight * (1 - getRatio(event)) * 0.08,
-        ease: 'none',
+    events.forEach((event, i) => {
+      const image = event.querySelectorAll('.parallaxImage')
+      
+      // 跳過沒有圖片的元素
+      if (image.length === 0) {
+        return
       }
-    )
-  })
+      
+      // 根據裝置調整視差強度
+      const parallaxFactor = isLowPerformanceDevice ? 0.1 : 0.3
+      
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: event,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: 0.1,
+          invalidateOnRefresh: true,
+          markers: !isProduction && process.env.NODE_ENV === 'development',
+        },
+      })
+
+      tl.fromTo(
+        image,
+        {
+          y: () => -window.innerHeight * getRatio(event) * parallaxFactor,
+          force3D: true, // 啟用硬體加速
+        },
+        {
+          y: () => window.innerHeight * (1 - getRatio(event)) * parallaxFactor,
+          ease: 'none',
+          force3D: true, // 啟用硬體加速
+        }
+      )
+    })
+  } catch (error) {
+    console.error('設置視差效果時出錯:', error)
+  }
 }
 
 export const hoverMovingEffect = (target: HTMLElement) => {
