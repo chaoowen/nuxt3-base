@@ -1,5 +1,5 @@
 <template>
-  <div class="language-switcher relative inline-block">
+  <div class="relative inline-block">
     <button 
       @click.stop="toggleDropdown"
       ref="buttonRef"
@@ -42,6 +42,7 @@
 import { ref, computed, onMounted, onBeforeUnmount, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
+import { useNuxtApp } from '#app'
 
 const { locale, locales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
@@ -58,6 +59,9 @@ const dropdownStyle = ref({
   minWidth: '120px',
   opacity: 0,
 })
+
+const nuxtApp = useNuxtApp()
+const isClient = computed(() => nuxtApp.isHydrating === false)
 
 const updateDropdownPosition = async () => {
   if (!buttonRef.value || !isOpen.value) return
@@ -127,15 +131,17 @@ const switchLanguage = (localeCode) => {
 }
 
 onMounted(() => {
-  if (process.client) {
+  if (isClient.value) {
     document.addEventListener('mousedown', onClickOutside)
     window.addEventListener('resize', updateDropdownPosition)
     window.addEventListener('scroll', updateDropdownPosition, true)
+    // 初始更新位置
+    updateDropdownPosition()
   }
 })
 
 onBeforeUnmount(() => {
-  if (process.client) {
+  if (isClient.value) {
     document.removeEventListener('mousedown', onClickOutside)
     window.removeEventListener('resize', updateDropdownPosition)
     window.removeEventListener('scroll', updateDropdownPosition, true)
@@ -144,11 +150,6 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-.language-switcher {
-  position: relative;
-  display: inline-block;
-}
-
 .lang-toggle {
   padding: 0.375rem 0.75rem;
   background-color: transparent;
