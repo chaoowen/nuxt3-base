@@ -44,6 +44,12 @@ interface RotateOptions {
   delay: number
 }
 
+// 添加常量用於標識不同類型的 ScrollTrigger
+const ANIMATION_TYPES = {
+  ROTATE: 'rotate',
+  PARALLAX: 'parallax'
+}
+
 export const infiniteRotate = (options: RotateOptions) => {
   const { target, clockwise, delay } = options
   gsap
@@ -61,23 +67,60 @@ export const infiniteRotate = (options: RotateOptions) => {
 }
 
 export const scrollRotate = (options: RotateOptions) => {
-  const { target, clockwise, delay } = options
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: '#top',
-        pin: false,
-        scrub: 2,
-        start: 'top bottom',
-        end: 'bottom top',
-      },
+  const { target, clockwise } = options
+  
+  // 只清理旋轉相關的 ScrollTrigger 實例
+  try {
+    ScrollTrigger.getAll().forEach(st => {
+      if (st && st.kill && st.vars && st.vars.id === ANIMATION_TYPES.ROTATE) {
+        st.kill()
+      }
     })
-    .to(target, {
-      rotate: clockwise ? '+=720' : '-=720',
-      duration: 4,
-      ease: 'none',
-      delay: delay,
+  } catch (error) {
+    console.error('清理旋轉動畫 ScrollTrigger 實例時出錯:', error)
+  }
+  
+  const createdInstances: any[] = []
+  
+  try {
+    // 確保目標元素存在
+    const elements: HTMLElement[] = gsap.utils.toArray(target)
+    if (elements.length === 0) {
+      console.warn(`未找到目標元素: ${target}`)
+      return null
+    }
+    
+    // 對每個元素應用旋轉動畫
+    elements.forEach((element) => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: document.body,
+          start: 'top top',
+          end: 'bottom bottom',
+          scrub: 1,
+          invalidateOnRefresh: true,
+          id: ANIMATION_TYPES.ROTATE, // 添加標識符
+        },
+      })
+      
+      tl.to(element, {
+        rotation: clockwise ? 720 : -720,
+        ease: 'none',
+        overwrite: 'auto',
+      })
+      
+      if (tl.scrollTrigger) {
+        createdInstances.push(tl.scrollTrigger)
+      }
     })
+    
+    // 返回第一個創建的實例
+    return createdInstances.length > 0 ? createdInstances[0] : null
+    
+  } catch (error) {
+    console.error('創建旋轉動畫時出錯:', error)
+    return null
+  }
 }
 
 export const setParallax = () => {
@@ -86,9 +129,22 @@ export const setParallax = () => {
   // 檢測裝置性能
   const isLowPerformanceDevice = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   
+  // 只清理視差相關的 ScrollTrigger 實例
   try {
-    const events = gsap.utils.toArray('.parallax')
-    const getRatio = (el) =>
+    ScrollTrigger.getAll().forEach(st => {
+      if (st && st.kill && st.vars && st.vars.id === ANIMATION_TYPES.PARALLAX) {
+        st.kill()
+      }
+    })
+  } catch (error) {
+    console.error('清理視差效果 ScrollTrigger 實例時出錯:', error)
+  }
+  
+  const createdInstances: any[] = []
+  
+  try {
+    const events: HTMLElement[] = gsap.utils.toArray('.parallax')
+    const getRatio = (el: any) =>
       window.innerHeight / (window.innerHeight + el.offsetHeight)
 
     events.forEach((event, i) => {
@@ -110,6 +166,7 @@ export const setParallax = () => {
           scrub: 0.1,
           invalidateOnRefresh: true,
           markers: !isProduction && process.env.NODE_ENV === 'development',
+          id: ANIMATION_TYPES.PARALLAX, // 添加標識符
         },
       })
 
@@ -125,10 +182,17 @@ export const setParallax = () => {
           force3D: true, // 啟用硬體加速
         }
       )
+      
+      if (tl.scrollTrigger) {
+        createdInstances.push(tl.scrollTrigger)
+      }
     })
   } catch (error) {
     console.error('設置視差效果時出錯:', error)
   }
+  
+  // 返回創建的實例
+  return createdInstances
 }
 
 export const hoverMovingEffect = (target: HTMLElement) => {
